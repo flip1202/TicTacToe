@@ -56,8 +56,7 @@ public class TicTacToe
 				return "O";
 			}
 		}
-
-		for (int a = 0; a < 16; a++) 
+                for (int a = 0; a < 16; a++) 
 		{
 			if (Arrays.asList(board).contains(String.valueOf(a + 1))) 
 			{
@@ -87,8 +86,7 @@ public class TicTacToe
 		System.out.println("|  " + board[12] + " |  " + board[13] + " |  " + board[14] + " |  " + board[15] + " | ");
 		System.out.println("|-----|-----|-----|-----|");
 	}
-
-	public static void main(String[] args) 
+        public static void main(String[] args) 
 	{
 		Scanner in = new Scanner(System.in);
 		board = new String[16];
