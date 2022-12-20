@@ -13,6 +13,7 @@ public class TicTacToe
 
 			switch (a) 
 			{
+			// Gewinnmöglichkeiten
 			case 0:
 				line = board[0] + board[1] + board[2] + board[3];
 				break;
@@ -126,6 +127,7 @@ public class TicTacToe
 				System.out.println("Ups, dass kann nicht sein; entscheide weiße:");
 				continue;
 			}
+			//damit keine Verschiebung stattfindet bei Eingabe von zweistelligen Zahlen
 			if (numInput > 9 && turn == "X") 
 			{
 				turn = "X ";
