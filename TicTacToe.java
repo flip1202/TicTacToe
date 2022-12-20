@@ -50,7 +50,8 @@ public class TicTacToe
 			if (line.equals("XXXX")) 
 			{
 				return "X";
-			} else if (line.equals("OOOO")) 
+			} 
+			else if (line.equals("OOOO")) 
 			{
 				return "O";
 			}
@@ -61,7 +62,8 @@ public class TicTacToe
 			if (Arrays.asList(board).contains(String.valueOf(a + 1))) 
 			{
 				break;
-			} else if (a == 16) 
+			} 
+			else if (a == 15) 
 			{
 				return "Unentschieden";
 			}
@@ -120,7 +122,8 @@ public class TicTacToe
 					System.out.println("Ups, dass kann nicht sein; entscheide weiße:");
 					continue;
 				}
-			} catch (InputMismatchException e) 
+			} 
+			catch (InputMismatchException e) 
 			{
 				System.out.println("Ups, dass kann nicht sein; entscheide weiße:");
 				continue;
@@ -140,14 +143,16 @@ public class TicTacToe
 				if (turn.equals("X") || turn.equals("X ")) 
 				{
 					turn = "O";
-				} else 
+				} 
+				else 
 				{
 					turn = "X";
 				}
 
 				printBoard();
 				winner = checkWinner();
-			} else 
+			} 
+			else 
 			{
 				System.out.println("Sorry, dieses Feld ist schon belegt. Entscheide dich für ein Anderes:");
 			}
@@ -155,7 +160,8 @@ public class TicTacToe
 		if (winner.equalsIgnoreCase("Unentschieden")) 
 		{
 			System.out.println("Super, ein Kunstwerk! Danke für´s Spielen.");
-		} else {
+		} 
+		else {
 			System.out.println("Glückwunsch! " + winner + " hat sich den Sieg geholt! Danke für´s Spielen.");
 		}
 		in.close();
