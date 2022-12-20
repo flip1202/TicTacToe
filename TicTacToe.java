@@ -111,7 +111,7 @@ public class TicTacToe
 		System.out.println("X startet. Gib eine Zahl an um zu starten:");
 
 		while (winner == null)
-{
+		{
 			int numInput;
 
 			try 
